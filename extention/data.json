@@ -1,0 +1,163 @@
+[
+  {
+    "elementName": "Navbar",
+    "element": "ul",
+    "style": " list-style-type: none;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); margin: 0; padding: 0; overflow:hidden; position: fixed; width:100%;background-color: #333; top:0;",
+    "active": true,
+    "class": "navbar",
+    "members": [
+      {
+        "style": "float: left;",
+        "element": "li",
+        "class": "li",
+        "styleChild": "display: block; color: white; text-align: center; padding: 14px 16px; text-decoration: none; font-size: 25px;",
+        "childElement": "a",
+        "ChildClass": "a",
+        "values": [
+          "Home"
+        ]
+      },
+      {
+        "style": "float: left;",
+        "element": "li",
+        "class": "li",
+        "childElement": "a",
+        "ChildClass": "a",
+        "styleChild": "display: block; color: white; text-align: center; padding: 14px 16px; text-decoration: none; font-size: 25px;",
+        "values": [
+          "Contact"
+        ]
+      },
+      {
+        "style": "float: left;",
+        "class": "li",
+        "element": "li",
+        "childElement": "a",
+        "ChildClass": "a",
+        "styleChild": "display: block; color: white; text-align: center; padding: 14px 16px; text-decoration: none; font-size: 25px;",
+        "values": [
+          "Pages"
+        ]
+      }
+    ]
+  },
+  {
+    "elementName": "Side Nav Bar",
+    "element": "sidenav",
+    "class": "sidenav",
+    "style": " list-style-type:box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); none; margin: 0; padding: 0; width: 200px; position: fixed;height:100%;background-color: #363c37;",
+    "active": true,
+    "members": [
+      {
+        "element": "li",
+        "class": "li",
+        "styleChild": "padding: 8px 8px 8px 32px; text-decoration: none; font-size: 25px; color: #818181; display: block; transition: 0.3s;",
+        "childElement": "a",
+        "ChildClass": "a",
+        "values": [
+          "Home"
+        ]
+      },
+      {
+        "element": "li",
+        "class": "li",
+        "childElement": "a",
+        "ChildClass": "a",
+        "styleChild": "padding: 8px 8px 8px 32px; text-decoration: none; font-size: 25px; color: #818181; display: block; transition: 0.3s;",
+        "values": [
+          "Contact"
+        ]
+      },
+      {
+        "element": "li",
+        "class": "li",
+        "childElement": "a",
+        "ChildClass": "a",
+        "styleChild": "padding: 8px 8px 8px 32px; text-decoration: none; font-size: 25px; color: #818181; display: block; transition: 0.3s;",
+        "values": [
+          "Pages"
+        ]
+      }
+    ]
+  },
+  {
+    "elementName": "Card View",
+    "element": "div",
+    "class": "row",
+    "style": " display: table; margin-left:25%; clear: both;",
+    "active": true,
+    "members": [
+      {
+        "class": "column",
+        "element": "div",
+        "style": " float:left; width: 25%; padding: 0 10px;",
+        "childElement": "div",
+        "ChildClass": "card",
+        "styleChild": " box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);padding: 120px ;;text-align: center;background-color:#c1bdbd;",
+        "values": [
+          "Home"
+        ]
+      },
+      {
+        "style": " float:left; width: 25%; padding: 0 10px;",
+        "class": "column",
+        "element": "div",
+        "childElement": "div",
+        "ChildClass": "card",
+        "styleChild": " box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);padding: 16px;  padding: 120px;  margin-left: 208%;text-align: center;background-color: #c1bdbd",
+        "values": [
+          "Contact"
+        ]
+      },
+      {
+        "style": " float:left; width: 25%; padding: 0 10px;",
+        "element": "div",
+        "class": "column",
+        "childElement": "div",
+        "ChildClass": "card",
+        "styleChild": " box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);padding: 16px; padding: 120px;margin-left: 414%;text-align: center;background-color: #c1bdbd",
+        "values": [
+          "Pages"
+        ]
+      }
+    ]
+  },
+  {
+    "elementName": "Footer",
+    "element": "ul",
+    "style": " list-style-type: none;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); margin: 0; padding: 0; overflow:hidden; position: fixed; width:100%;height: 250px;background-color: rgb(111 104 104);",
+    "active": true,
+    "members": [
+      {
+        "style": "float: left;",
+        "element": "li",
+        "styleChild": "display: block; color: white; text-align: center; padding: 14px 16px; text-decoration: none; font-size: 25px;",
+        "childElement": "a",
+        "values": [
+          "Footer Containt1"
+          
+         
+        ]
+      },
+      {
+        "value": "",
+        "style": "float: left;",
+        "element": "li",
+        "childElement": "a",
+        "styleChild": "display: block; color: white; text-align: center; padding: 14px 16px; text-decoration: none; font-size: 25px;",
+        "values": [
+          "Footer Containt2"
+        ]
+      },
+      {
+        "style": "float: left;",
+        "element": "li",
+        "childElement": "a",
+        "styleChild": "display: block; color: white; text-align: center; padding: 14px 16px; text-decoration: none; font-size: 25px;",
+        "values": [
+          "Footer Containt3"
+        ]
+      }
+    ]
+  }
+]
