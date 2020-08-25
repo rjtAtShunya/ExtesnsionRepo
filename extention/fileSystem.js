@@ -123,34 +123,7 @@ function displayEntries(entries) {
   });
 }
 
-function onFs(fs) {
 
-    fs.root.getFile('/temp/log.txt', {create: true}, function(fileEntry) {
-  
-      // Create a FileWriter object for our FileEntry.
-      fileEntry.createWriter(function(fileWriter) {
-  
-        fileWriter.onwrite = function(e) {
-          console.log('Write completed.');
-        };
-  
-        fileWriter.onerror = function(e) {
-          console.log('Write failed: ' + e.toString());
-        };
-  
-        var bb = new BlobBuilder(); // Create a new Blob on-the-fly.
-        bb.append('Lorem Ipsum');
-  
-        fileWriter.write(bb.getBlob('text/plain'));
-  
-      }, onError);
-  
-    }, onError);
-  
-  }
-  
-  window.requestFileSystem(TEMPORARY, 1024*1024 /*1MB*/, onFs, onError);
-  
 function listFiles() {
   var dirReader = filesystem.root.createReader();
   var entries = [];
@@ -168,6 +141,7 @@ function listFiles() {
 
   fetchEntries();
 }
+
 
 
 // Save a file in the FileSystem.
@@ -193,7 +167,7 @@ function saveFile(filename, content) {
         alert('An error occurred and your file could not be saved!');
       };
 
-      var contentBlob = new Blob([content], {type: 'text/plain'});
+      var contentBlob = new Blob([content], {type: 'json'});
 
       fileWriter.write(contentBlob);
 
@@ -220,14 +194,19 @@ function deleteFile(filename) {
 
 // Add event listeners on the form.
 function setupFormEventListener() {
-
+   
   form.addEventListener('submit', function(e) {
     e.preventDefault();
 
     // Get the form data.
     var filename = filenameInput.value;
     var content = contentTextArea.value;
-
+var name = "config.json"
+    // console.log(data)
+    var data = JSON.parse(localStorage.getItem('data'));
+     data = JSON.stringify(data)
+    saveFile(name, data);
+    console.log("file saved with data:",data)
     // Save the file.
     saveFile(filename, content);
   });
